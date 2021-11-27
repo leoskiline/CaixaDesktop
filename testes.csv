@@ -1,0 +1,17 @@
+Status Caixa;Tipo;Valor;Motivo
+Aberto;Entrada;15;Teste
+Aberto;Saida;15;Teste
+Aberto;Entrada;-15;Teste
+Aberto;Saida;-15;Teste
+Aberto;Entrada;15;
+Aberto;Saida;15;
+Aberto;Entrada;-15;
+Aberto;Saida;-15;
+Fechado;Entrada;15;Teste
+Fechado;Saida;15;Teste
+Fechado;Entrada;-15;Teste
+Fechado;Saida;-15;Teste
+Fechado;Entrada;15;
+Fechado;Saida;15;
+Fechado;Entrada;-15;
+Fechado;Saida;-15;
