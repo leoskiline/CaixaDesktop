@@ -24,12 +24,20 @@ namespace CaixaDesktop.Controle
             {
                 MovimentoCaixa movimento = new MovimentoCaixa(1, valor, tipo, dataAtual, _conexao);
                 resposta = movimento.GravarMovimentoCaixa();
+              
                 if (resposta)
                 {
                     Caixa caixa = new Caixa(_conexao);
                     caixa.ObterCaixa(1);
-                    if (tipo == 'E') caixa.SaldoFinal += valor;
-                    else caixa.SaldoFinal -= valor;
+                    if (tipo == 'E')
+                        caixa.SaldoFinal += valor;
+                    else
+                    {
+                        if ((caixa.SaldoFinal - valor) > 0)
+                            caixa.SaldoFinal -= valor;
+                        else
+                            resposta = false;
+                    }
                     caixa.AtualizarCaixa();
                 }
             }

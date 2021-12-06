@@ -17,7 +17,7 @@ namespace Teste
         }
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-        "C:\\Users\\Leonardo\\source\\repos\\CaixaDesktop\\testes.csv", "testes#csv",
+        "C:\\Users\\Cliente\\Desktop\\engenharia\\CaixaDesktop\\Teste\\Dataset\\testes.csv", "testes#csv",
         DataAccessMethod.Sequential), DeploymentItem("testes.csv"), TestMethod]
         public void TesteIntegrado()
         {
